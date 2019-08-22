@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+    <data>
+        <variable
+                name="viewModel"
+                type="com.example.singhrahuldeep.igethappy.viewModel.LoginViewModel"/>
+
+    </data>
+
+    <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lin_main"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".views.auth.LoginActivity">
+
+        <ImageView
+                android:id="@+id/iv_banner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/banner_mage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_300"/>
+
+        <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:bottom="@+id/iv_banner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tabDots"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabDots"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_banner"
+                app:tabBackground="@drawable/tab_selector"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content"/>
+
+
+        <RelativeLayout
+                android:id="@+id/rel_layout_fb"
+                app:layout_constraintTop_toBottomOf="@+id/iv_banner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:background="@drawable/ic_facebook"
+                tools:ignore="RtlHardcoded">
+
+            <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_fb"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:visibility="gone"/>
+
+            <ImageView
+                    android:id="@+id/img_fb"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_25"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:onClick="onClick"
+                    tools:ignore="ContentDescription"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:text="facebook"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/img_fb"
+                    android:textColor="@color/colorWhite"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rel_layout_google"
+                app:layout_constraintTop_toBottomOf="@+id/rel_layout_fb"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:background="@drawable/ic_google"
+                tools:ignore="RtlHardcoded">
+
+            <com.google.android.gms.common.SignInButton
+                    android:id="@+id/btn_google_sign_in"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:visibility="gone"/>
+
+            <ImageView
+                    android:id="@+id/img_google"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="9dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="onClick"
+                    tools:ignore="ContentDescription,RtlHardcoded"/>
+
+            <TextView
+                    android:id="@+id/tv_google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone"
+                    android:text="google"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/btn_google_sign_in"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_12"
+                    tools:ignore="RtlHardcoded"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_continue_with_email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:onClick="@{()-> viewModel.onContinueWithEmailClicked( )}"
+                app:layout_constraintTop_toBottomOf="@+id/rel_layout_google"
+                android:layout_width="match_parent"
+                android:background="@drawable/round_layout_border_black"
+                android:layout_height="@dimen/dp_50">
+
+            <ImageView
+                    android:id="@+id/iv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_28"
+                    android:background="@drawable/email_icon"
+                    android:backgroundTint="@color/black"
+                    android:text="@string/continue_with_email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:text="@string/continue_with_email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                app:layout_constraintTop_toBottomOf="@+id/rl_continue_with_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45">
+
+            <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_terms"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                    android:id="@+id/tv_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/terms_conditions"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dp_14"/>
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

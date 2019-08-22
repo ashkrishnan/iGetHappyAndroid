@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+    <data>
+
+        <variable
+                name="viewmodel"
+                type="com.example.singhrahuldeep.igethappy.viewModel.AddCareReceiverViewModel"
+        />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <ScrollView
+                android:id="@+id/ScrollView01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cll_main"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:paddingBottom="20dp"
+                    android:focusableInTouchMode="true">
+
+                <LinearLayout
+                        android:id="@+id/ll_toolbar"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50">
+
+                    <ImageView
+                            android:id="@+id/iv_back"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/back_icon"
+                    />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_care_recievers"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginStart="@dimen/dp_20"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_50"
+                            app:layout_constraintStart_toEndOf="@+id/iv_back"/>
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_image"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:background="@drawable/ic_man_avatar_icon"
+                        app:layout_constraintTop_toBottomOf="@+id/ll_toolbar"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_100"/>
+
+                <LinearLayout
+                        android:id="@+id/ll_image_select"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_image"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_character"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_image"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_50"/>
+
+                </LinearLayout>
+
+                <EditText
+                        android:id="@+id/et_reciever_name"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ll_image_select"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:maxLength="50"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:drawablePadding="@dimen/padding_left_email"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/carereciever_name"
+                        android:textColor="@color/black"/>
+
+                <EditText
+                        android:id="@+id/et_phone_no"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/et_reciever_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:maxLength="12"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:drawablePadding="@dimen/padding_left_email"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/phone_number"
+                        android:textColor="@color/black"/>
+
+                <EditText
+                        android:id="@+id/et_email_address"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/et_phone_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:maxLength="50"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:drawablePadding="@dimen/padding_left_email"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/email_id"
+                        android:textColor="@color/black"/>
+
+                <TextView
+                        android:id="@+id/tv_minor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/et_email_address"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:text="@string/minor_question"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                        android:id="@+id/ll_radio_btns"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_minor"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                    >
+                        <RadioButton
+                                android:id="@+id/rb_yes"
+                                android:text="@string/yes"
+                                android:layout_width="wrap_content"
+                                android:button="@drawable/radio_selectors"
+                                android:padding="5dp"
+                                android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                                android:id="@+id/rb_no"
+                                android:layout_marginStart="@dimen/dp_40"
+                                android:text="@string/no"
+                                android:button="@drawable/radio_selectors"
+                                android:padding="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <TextView
+                        android:id="@+id/tv_relationship"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ll_radio_btns"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:text="@string/relationship"
+                        android:textSize="@dimen/sp_18"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_relations"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/sp_20"
+                        android:layout_marginEnd="@dimen/sp_20"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_relationship"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"/>
+
+
+                <TextView
+                        android:id="@+id/tv_save"
+                        app:layout_constraintTop_toBottomOf="@+id/rv_relations"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:background="@drawable/roundedge_blue_bg"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/btn_continue"
+                        android:textColor="@color/white_color"/>
+
+
+                <TextView
+                        android:id="@+id/tv_addanother"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:layout_centerHorizontal="true"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/sp_16"
+                        android:gravity="center"
+                        android:onClick="@{()-> viewmodel.addCareReceiver()}"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:background="@drawable/round_layout_border_black"
+                        app:layout_constraintTop_toBottomOf="@id/tv_save"
+                        android:text="@string/add_care_reciever"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

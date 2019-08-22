@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.singhrahuldeep.igethappy.views.dashboard.LandingPageActivity">
+
+    <ImageView
+            android:id="@+id/iv_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/ic_coverimage_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200" app:layout_constraintHorizontal_bias="0.0"/>
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+    <ImageView
+            android:id="@+id/iv_add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_add_black_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/iv_background"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_background"/>
+
+    <LinearLayout
+            android:id="@+id/ll_wlcm_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_add"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tv_wlcm_txt"
+                android:text="@string/wlcm_txt"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/dp_20"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                app:layout_constraintTop_toBottomOf="@+id/iv_add"
+                android:id="@+id/tv_wlcm_name"
+                android:text="@string/name"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <TextView
+            app:layout_constraintTop_toBottomOf="@+id/ll_wlcm_name"
+            android:id="@+id/tv_click_track_mood"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/click_to_track_mood"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+            android:id="@+id/iv_face_mood"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/ic_laughed_mood"
+            app:layout_constraintTop_toBottomOf="@+id/tv_click_track_mood"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+    <LinearLayout
+            android:id="@+id/ll_feeling"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_face_mood"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tv_im_feeling"
+                android:text="@string/feeling"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                app:layout_constraintTop_toBottomOf="@+id/iv_add"
+                android:id="@+id/tv_feeling"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/ll_bottom_tab"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+        >
+            <ImageView
+                    android:id="@+id/iv_community"
+                    app:srcCompat="@drawable/ic_community"
+                    android:layout_width="60dp"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"
+                    tools:ignore="ContentDescription"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+        >
+            <ImageView
+                    android:id="@+id/iv_meditation"
+                    app:srcCompat="@drawable/ic_meditation"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    tools:ignore="ContentDescription"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+        >
+            <ImageView
+                    android:id="@+id/iv_professionals"
+                    android:background="@drawable/ic_professionals"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    tools:ignore="ContentDescription"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

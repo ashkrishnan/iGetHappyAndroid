@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+                android:id="@+id/nav_happy_memories"
+                android:title="@string/happy_memories"/>
+        <item
+                android:id="@+id/nav_mood_logs"
+                android:title="@string/mood_logs"/>
+        <item
+                android:id="@+id/nav_my_vents"
+                android:title="@string/my_vents"/>
+        <item
+                android:id="@+id/nav_doc"
+                android:title="@string/documents"/>
+        <item
+                android:id="@+id/nav_reminders"
+                android:title="@string/reminders"/>
+        <item
+                android:id="@+id/nav_my_appoint"
+                android:title="@string/My_Appointments"/>
+        <item
+                android:id="@+id/nav_reciever"
+                android:title="@string/care_receiver"/>
+        <item
+                android:id="@+id/nav_community"
+                android:title="@string/community"/>
+        <item
+                android:id="@+id/nav_chat_bot"
+                android:title="@string/chat_bot"/>
+        <item
+                android:id="@+id/nav_meditation"
+                android:title="@string/meditation"/>
+        <item
+                android:id="@+id/nav_help"
+                android:title="@string/help_support"/>
+        <item
+                android:id="@+id/nav_action"
+                android:title="@string/settings"/>
+        <item
+                android:id="@+id/nav_logout"
+                android:title="@string/logout"/>
+
+    </group>
+
+</menu>

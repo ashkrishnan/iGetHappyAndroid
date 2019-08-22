@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.singhrahuldeep.schoolManagementSystem.views.auth.Main2Activity">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_alignParentBottom="true"
+                      android:layout_marginBottom="8dp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      android:layout_marginStart="8dp"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      android:layout_marginEnd="8dp"
+                      android:id="@+id/linearLayout"
+                      tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/lin_community"
+                          android:layout_weight="1"
+                          android:layout_gravity="center"
+                          android:orientation="vertical"
+                          android:padding="6dp">
+
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_gravity="center"
+                           app:srcCompat="@drawable/ic_tab_bar_post_icon"
+                           android:layout_height="wrap_content"
+                           tools:ignore="ContentDescription"/>
+                <!--<View android:layout_width="match_parent" android:layout_height="1dp"
+                      android:background="@color/colorPrimary"-->
+
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/lin_add"
+                          android:layout_weight="1"
+                          android:orientation="vertical"
+                          android:padding="6dp">
+
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_gravity="center"
+                           app:srcCompat="@drawable/ic_plus"
+                           android:layout_height="wrap_content"
+                           tools:ignore="ContentDescription"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:id="@+id/lin_chat"
+                          android:layout_weight="1"
+                          android:layout_gravity="center"
+                          android:orientation="vertical"
+                          android:padding="6dp">
+
+
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_gravity="center"
+                           app:srcCompat="@drawable/ic_chat"
+                           android:layout_height="wrap_content"
+                           tools:ignore="ContentDescription"/>
+
+                <!--  <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/colorPrimary"
+
+                  />-->
+
+            </LinearLayout>
+        </LinearLayout>
+        <include
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" layout="@layout/toolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/include"/>
+
+        <fragment
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:name="com.example.singhrahuldeep.igethappy.views.fragments.CommunityPostsFragment"
+                android:id="@+id/fragment2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

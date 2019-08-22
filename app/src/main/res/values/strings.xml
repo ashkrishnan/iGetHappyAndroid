@@ -1,0 +1,566 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">iGetHappy</string>
+    <string name="please_wait_meassge">Please wait..</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="skip">Skip</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="gps_msg">You need to activate location service to use this feature. Please turn on network or GPS mode
+        in location settings
+    </string>
+
+    <string name="email_sent_to">An email has been sent to </string>
+    <string name="for_consent"> for consent</string>
+
+    <string name="connection_error">Chat connection has been dropped</string>
+    <string name="reconnect_alert">Reconnecting in %s seconds</string>
+
+    <string name="forgot_password_msg">FORGOT PASSWORD ?</string>
+    <string name="empty_username_error_msg">Please enter valid username</string>
+    <string name="no_internet_msg">No internet connection.</string>
+
+    <string name="enter_phone">Please enter Phone Number</string>
+
+    <string name="new_assignments">New Assignments</string>
+    <string name="maintenance_history">Maintenance History</string>
+    <string name="change_password">Change Password</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="location_permissions">Location Permissions Turned Off</string>
+    <string name="allow_worknova_location">Allow to turn on Location Permissions</string>
+    <string name="turn_on_location">Turn on Location</string>
+
+    <string name="facebook_app_id">824806454558334</string>
+
+    <string name="home">Home</string>
+    <string name="support">Support</string>
+    <string name="unlike">UNLIKE</string>
+
+    <string name="no_data_found_msg">No data found.</string>
+    <string name="server_error_msg">Server error.Please try again.</string>
+    <string name="crash_toast_text">Ooooops ! I crashed, but a report has been sent to my developer to help fix the
+        issue !
+    </string>
+    <string name="crash_dialog_title">Shadow has crashed</string>
+    <string name="crash_dialog_text">An unexpected error occurred forcing the
+        application to stop. Please help us fix this by sending us error data,
+        all you have to do is click OK.
+    </string>
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+    <string name="crash_dialog_ok_toast">Thank you !</string>
+
+    <string name="user_name_error">Username need to be over 6 character long</string>
+    <string name="invalid_pass_error">Password should be between 6 and 15 characters</string>
+
+    <string name="location_error">Location should be selected</string>
+    <string name="time_error">Meeting time should be selected</string>
+    <string name="date_error">Meeting date should be selected</string>
+
+    <string name="login_email">Login using Email</string>
+    <string name="tell_yourself">Tell us about yourself</string>
+    <string name="com_text">To communicate with a counselor/professional</string>
+
+    <string name="language_preferences">What are your Language Preferences ?</string>
+    <string name="tell_gender">Select your Gender</string>
+
+    <string name="select_dob">What\'s your Date of Birth</string>
+    <string name="create_account">Create Account</string>
+    <string name="forgot_password">Forgot Password ?</string>
+
+    <string name="invalid_first_name">Please enter first name</string>
+    <string name="invalid_last_name">Please enter last name</string>
+    <string name="create_username">Hi! Signup via email</string>
+    <string name="create_password">Hi! Create a password</string>
+    <string name="password">Password</string>
+
+    <string name="add_care_reciever">Add another Care Receiver</string>
+    <string name="i_am">I\'m a</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="want_caregiver">Want to be a caregiver for a loved one ?</string>
+
+    <string name="caregiver_text2">An individual who wishes to initiate and coordinate care for a loved one</string>
+    <string name="caregiver_text3">You can add a Care Receiver at anytime from your profile as well</string>
+    <string name="consent_text">I consent to the</string>
+    <string name="user_first_last"><![CDATA[What is your first & last  name?]]></string>
+    <string name="school_selection"><![CDATA[What is the name & location of the school?]]></string>
+    <string name="comp_selection"><![CDATA[What is the name & location of the company?]]></string>
+    <string name="address_error_msg">Invalid address</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="via_email">via Email</string>
+    <string name="email">Email ID</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="nick_name">Nick Name</string>
+    <string name="carereciever_name">Care Receiver Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="email_phone">Email ID / Phone Number</string>
+    <string name="email_id">Email ID</string>
+    <string name="select_profession">Please select profession</string>
+
+    <string name="minor_question">Is Care Receiver a minor?</string>
+    <string name="relationship">What relationship to care receiver?</string>
+    <string name="forgot_email_hint">Enter your registered email ID</string>
+    <string name="login">Login</string>
+    <string name="send">Send</string>
+    <string name="empty">Please enter</string>
+    <string name="internal_server_error">Internal server error, so please try after some time!</string>
+    <string name="invalid">Please enter valid</string>
+    <string name="invalid_email">Please enter valid Email ID</string>
+    <string name="invalid_phone">Please enter valid Phone</string>
+    <string name="internet_connection">Please check your internet connection and try after some time!</string>
+    <string name="maintenance_user">Maintenance User</string>
+    <string name="via_number">via Number</string>
+    <string name="dialog_verify_pass_title_name">Choose option to reset your password?</string>
+    <string name="dialog_delete_title_name">Are you sure you want to delete this user?</string>
+
+    <string name="dialog_verify_otp_title_name">Choose option to validate your account</string>
+    <string name="video_dialog">select or create</string>
+    <string name="media_dialog">Photo or Video</string>
+
+
+    <string name="tooltip_user">To register as a user "User" means, the user will have the option to shadow or be
+        shadowed by other user(s) on the platform
+    </string>
+    <string name="tooltip_school">To register as a "School" a valid representor of the establishment is needed to
+        verified the school account. A shadow team member will be reaching out post registration to confirm registration
+    </string>
+    <string name="tooltip_compnay">To register as a "Company" a valid representor of the establishment is needed to
+        verified the Company account. A shadow team member will be reaching out post registration to confirm
+        registration
+    </string>
+    <string name="bio_hint">write something....</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="school_w_occu">School with these occupations</string>
+    <string name="title_activity_main4">MainActivity4</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="label_cancel">Cancel</string>
+    <string name="label_ok">OK</string>
+    <string name="label_select_video">Select Video</string>
+    <string name="permission_title_rationale">Permission needed</string>
+    <string name="permission_read_storage_rationale">Storage read permission is needed to pick files.</string>
+    <string name="toast_cannot_retrieve_selected_video">Cannot retrieve selected video</string>
+    <string name="video_saved_at">Video saves at : $%1s</string>
+    <string name="title_description">A library with UI and mechanisms to trim local videos on Android applications
+    </string>
+    <string name="description_app">
+        # Provide UI to preview and select start/end of the video to trim
+        \n\n# Thumbnails with frame by frame overview of the video
+        \n\n# Works with gallery and recorded videos
+    </string>
+    <string name="pick_a_video">Select or record a a video below to try it out:</string>
+    <string name="trimming_progress" tools:ignore="TypographyEllipsis">Trimming your video...</string>
+    <string name="chat_empty_you_are_alone_here">You\'re all alone out here.</string>
+    <string name="chat_empty_start_new_chat">Start new chat.</string>
+    <string name="dialogs_list_hint">Select a Dialog to Chat</string>
+    <string name="chat_attachment">Attachment</string>
+    <string name="dialogs_creation_error">Dialog creation errors</string>
+    <string name="dialogs_logged_in_as">Logged in as %s</string>
+    <string name="dialogs_deletion_error">Dialog deletion errors</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="referral_code">I have a referral code</string>
+    <string name="get_started">Get Started</string>
+    <string name="continu">Continue</string>
+    <string name="begin">Begin</string>
+    <string name="dont_have_account">Don\'t have an account yet ?</string>
+    <string name="shadowed_me">Shadowed Me</string>
+    <string name="shadowed_other">Shadowed Others</string>
+    <string name="permission_required_toast">Permission Required</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="permission_rationale_location">Location Permission</string>
+    <string name="cannot_rate_your_own_profile">You can\'t rate your own profile.</string>
+    <string name="text_push_notification_message">Shadow Chat Message</string>
+
+    <string name="sender_id">826649076076</string>
+
+    <string name="file_provider_authority" translatable="false">com.android.igethappy.fileprovider</string>
+
+    <string name="no_occupation">No occupation yet.</string>
+    <string name="no_interest">No interest yet.</string>
+    <string name="no_chat_dialog_found">No chat found.</string>
+
+
+    <string name="current_version">0.9.1</string>
+
+    <string name="splash_app_title">Video &amp; Audio \nChat Sample</string>
+    <string name="splash_create_session_error">Create session errors:</string>
+
+
+    <!-- Dialogs imagesArray. -->
+    <string name="dlg_signal_error">Disconnected… Please check your Internet connection!</string>
+    <string name="dlg_login">Login…</string>
+    <string name="dlg_sign_in">Sign In…</string>
+    <string name="dlg_updating_user">Updating user…</string>
+    <string name="dlg_creating_new_user">Creating new user…</string>
+    <string name="dlg_logout">Logout…</string>
+    <string name="dlg_loading_opponents">Loading opponents…</string>
+
+
+    <!-- Errors imagesArray. -->
+    <string name="error_max_opponents_count">You can select up to %d opponents</string>
+    <string name="sign_up_error">Error creating new user, please try again</string>
+    <string name="sign_in_error_with_error">Sign In error. Error</string>
+    <string name="sign_in_error_without_error">Sign In error</string>
+    <string name="logout_user_with_error">Logout user error. Error</string>
+
+    <string name="sign_up">Signup now</string>
+
+    <string name="continue_with_email">Continue with Email</string>
+
+    <string name="save">Save</string>
+
+    <string name="email_already_exist">Email ID is already registered</string>
+    <string name="phone_already_exist">Phone number is already registered</string>
+
+    <string name="please_enter">Please enter Email ID/Phone Number</string>
+    <string name="please_enter_valid">Please enter valid Email ID/Phone Number</string>
+    <string name="please_enter_email">Please enter Email ID</string>
+    <string name="please_enter_phone">Please enter Phone</string>
+
+
+    <string name="empty_nick_name">Please enter Nick name</string>
+    <string name="empty_First_name">Please enter First name</string>
+    <string name="empty_Last_name">Please enter Last name</string>
+
+    <string name="invalid_length_nick_name">Please enter minimum three characters nick name</string>
+    <string name="invalid_length_first_name">Please enter minimum three characters first name</string>
+    <string name="invalid_length_last_name">Please enter minimum three characters last name</string>
+
+
+    <string name="please_enter_pass">Please enter password</string>
+    <string name="please_enter_valid_pass">Please enter valid password</string>
+    <string name="please_enter_8_char_pass">Please enter min 8 character password</string>
+
+    <string name="password_invalid">Your password should contain one numeric, one special character, one upper &amp;
+        lower case character
+    </string>
+
+    <string name="error_empty_login">Login can not be empty</string>
+    <string name="error_empty_chat_room_name">Chat room name can not be empty</string>
+
+    <string name="login_chat_login_error">Login Chat error. Please relogin. Error</string>
+    <string name="update_user_error">Update user error. Error</string>
+    <string name="loading_users_error">Loading users error. Error</string>
+
+    <string name="permission_unavailable">%s is not available now!</string>
+
+    <string name="field_name_user_name">User name</string>
+    <string name="field_name_chat_room_name">Chat room name</string>
+
+    <string name="error_name_must_not_contain_special_characters_from_app">%1$s must contain 3 &#8212; %2$s alphanumeric
+        Latin characters without space, the first char must be a letter
+    </string>
+
+    <!--menu-->
+    <string name="action_start_login">Done</string>
+
+    <string name="action_screen_share">Screen share</string>
+    <string name="action_update_opponens_list">Update opponents list</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_start_video_call">Video call</string>
+    <string name="action_start_audio_call">Audio call</string>
+
+
+    <!--action bar-->
+    <string name="actionbar_title_settings">Settings</string>
+    <string name="title_login_activity">Enter to chat</string>
+    <string name="subtitle_text_logged_in_as">Logged in as %s</string>
+    <string name="title_one_user_selected">%s user selected</string>
+    <string name="tile_many_users_selected">%s users selected</string>
+
+
+    <string name="incoming_call">Incoming Call</string>
+    <string name="also_on_call">Also on call:</string>
+    <string name="edit_opponents_list">Edit opponents list</string>
+    <string name="incoming_audio_call">Incoming Audio Call</string>
+    <string name="incoming_video_call">Incoming Video Call</string>
+    <string name="outgoing_audio_video_call_title">%s\n\nRinging</string>
+    <string name="user_list_on_call">User 1, User 2, User 3, User 4, User 5, User 6</string>
+
+
+    <string name="opponent_pending">Pending</string>
+    <string name="opponent_closed">Closed</string>
+    <string name="text_incoming_audio_call">Incoming Audio Call</string>
+    <string name="text_incoming_video_call">Incoming Video Call</string>
+    <string name="text_status_connect">Connect…</string>
+    <string name="text_status_checking">Checking…</string>
+    <string name="text_status_connected">Connected</string>
+    <string name="text_status_disconnected">Disconnected</string>
+
+    <string name="text_status_rejected">Rejected</string>
+    <string name="text_status_no_answer">No answer</string>
+    <string name="text_status_hang_up">Hung up</string>
+    <string name="text_status_closed">Closed</string>
+    <string name="text_status_time_out">Time Out</string>
+    <string name="text_status_failed">Failed</string>
+
+    <string name="text_welcoming_message">Please enter username and chat room name. \nYou can join existed chat room.
+    </string>
+    <string name="hint_user_name">User name</string>
+    <string name="hint_chat_room_name">Chat room name</string>
+
+    <string name="terms_conditions">
+        <u>Terms &amp; Conditions</u>
+    </string>
+
+    <string name="text_select_user_to_call">Select users you want to call</string>
+
+    <string name="call_was_stopped_connection_lost">Call was stopped because connection was lost</string>
+    <string name="connection_lost">Connection lost</string>
+
+    <string name="text_push_notification_messagee">"%s is calling you"</string>
+
+
+    <!--landing page-->
+    <string name="wlcm_txt">Welcome back,</string>
+    <string name="name">name</string>
+    <string name="click_to_track_mood">Please click here to track your moods</string>
+    <string name="feeling">I\'m feeling</string>
+    <string name="happy">Happy</string>
+
+    <!-- Settings imagesArray. -->
+    <string name="title_video_category">Video</string>
+    <string name="title_call_settings_category">Call Settings</string>
+
+    <string name="pref_default_value">Default</string>
+    <integer name="pref_default_int_value">0</integer>
+
+    <string name="pref_default_camera_key">default_camera_preference</string>
+    <string name="pref_default_camera_title">Default Camera</string>
+    <string name="pref_default_camera_dlg">Select default camera</string>
+    <string name="pref_default_camera_default">0</string>
+
+    <string name="pref_frame_rate_key">frame_rate</string>
+    <string name="pref_frame_rate_title">Frame Rate (0&#8211;30)</string>
+    <string name="pref_frame_rate_default">0</string>
+    <integer name="pref_frame_rate_min_value">0</integer>
+    <integer name="pref_frame_rate_max_value">30</integer>
+    <integer name="pref_frame_rate_stepSize">5</integer>
+
+    <string name="pref_resolution_key">resolution_preference</string>
+    <string name="pref_resolution_title">Video Format</string>
+    <string name="pref_resolution_dlg">Enter RTC local video resolution</string>
+    <string name="pref_resolution_default">-1</string>
+
+    <string name="pref_startbitrate_key">startbitrate_preference</string>
+    <string name="pref_startbitrate_title">Start bitrate setting</string>
+    <string name="pref_startbitrate_dlg">Start bitrate setting</string>
+    <string name="pref_startbitrate_default">Default</string>
+
+    <string name="pref_startbitratevalue_key">startbitratevalue_preference</string>
+    <string name="pref_startbitratevalue_title">Bandwidth (0&#8211;2000)</string>
+    <string name="pref_startbitratevalue_default">0</string>
+    <integer name="pref_startbitratevalue_min_value">0</integer>
+    <integer name="pref_startbitratevalue_max_value">2000</integer>
+    <integer name="pref_startbitratevalue_step_size">100</integer>
+
+    <string name="pref_disable_built_in_aec_key">disable_built_in_aec_preference</string>
+    <string name="pref_disable_built_in_aec_title">Disable built-in AEC</string>
+    <string name="pref_disable_built_in_aec_dlg">Disable built-in AEC</string>
+    <string name="pref_disable_built_in_aec_default">false</string>
+    <string name="pref_built_in_aec_not_available">Built-in AEC is not available</string>
+
+    <string name="pref_opensles_key">opensles_preference</string>
+    <string name="pref_opensles_title">Use OpenSL ES for audio playback</string>
+    <string name="pref_opensles_dlg">Use OpenSL ES for audio playback</string>
+    <string name="pref_opensles_default">false</string>
+
+    <string name="pref_noaudioprocessing_key">audioprocessing_preference</string>
+    <string name="pref_noaudioprocessing_title">Disable audio processing</string>
+    <string name="pref_noaudioprocessing_dlg">Disable audio processing pipeline</string>
+    <string name="pref_noaudioprocessing_default">false</string>
+
+    <string name="pref_manage_speakerphone_by_proximity_key">manage_speakerphone_by_proximity_preference</string>
+    <string name="pref_manage_speakerphone_by_proximity_title">Manage Speaker Phone by Proximity Sensor</string>
+    <string name="pref_manage_speakerphone_by_proximity_dlg">Manage Speaker Phone by Proximity Sensor</string>
+    <string name="pref_manage_speakerphone_by_proximity_summary">Enables managing of Speaker Phone by Proximity Sensor
+        for Audio calls
+    </string>
+    <string name="pref_manage_speakerphone_by_proximity_default">false</string>
+
+    <!--Call Settings-->
+
+    <string name="pref_answer_time_interval_key">answer_time_interval</string>
+    <string name="pref_answer_time_interval_title">Answer Time Interval (15&#8211;90s)</string>
+    <string name="pref_answer_time_interval_default_value">60</string>
+    <integer name="pref_answer_time_interval_min_value">15</integer>
+    <integer name="pref_answer_time_interval_max_value">90</integer>
+    <integer name="pref_answer_time_interval_step_size">5</integer>
+
+    <string name="pref_disconnect_time_interval_key">disconnect_time_interval</string>
+    <string name="pref_disconnect_time_interval_title">Disconnect Time Interval (10&#8211;90s)</string>
+    <string name="pref_disconnect_time_interval_default_value">10</string>
+    <integer name="pref_disconnect_time_interval_min_value">10</integer>
+    <integer name="pref_disconnect_time_interval_max_value">90</integer>
+    <integer name="pref_disconnect_time_interval_step_size">5</integer>
+
+    <string name="pref_dialing_time_interval_key">Dialing_time_interval</string>
+    <string name="pref_dialing_time_interval_title">Dialing Time Interval (3&#8211;10s)</string>
+    <string name="pref_dialing_time_interval_default_value">5</string>
+    <integer name="pref_dialing_time_interval_min_value">3</integer>
+    <integer name="pref_dialing_time_interval_max_value">10</integer>
+    <integer name="pref_dialing_time_interval_step_size">1</integer>
+
+    <string name="pref_videocodec_key">videocodec_preference</string>
+    <string name="pref_videocodec_title">Default video codec</string>
+    <string name="pref_videocodec_dlg">Select default video codec</string>
+    <string name="pref_videocodec_default">0</string>
+
+    <string name="pref_hwcodec_key">hwcodec_preference</string>
+    <string name="pref_hwcodec_title">Video codec hardware acceleration</string>
+    <string name="pref_hwcodec_default">true</string>
+
+    <string name="pref_value_enabled">Enabled</string>
+    <string name="pref_value_disabled">Disabled</string>
+
+    <string name="pref_room_server_url_key">room_server_url_preference</string>
+    <string name="pref_room_server_url_title">Room server URL.</string>
+    <string name="pref_room_server_url_dlg">Enter a room server URL.</string>
+    <string name="pref_room_server_url_default" translatable="false">https://apprtc.appspot.com</string>
+
+    <string name="pref_displayhud_key">displayhud_preference</string>
+    <string name="pref_displayhud_title">Display call statistics.</string>
+    <string name="pref_displayhud_dlg">Display call statistics.</string>
+    <string name="pref_displayhud_default" translatable="false">false</string>
+    <string name="pref_audiocodec_key">pref_audio_codec</string>
+    <string name="pref_audiocodec_title">Default audio codec</string>
+    <string name="pref_audiocodec_def">ISAC</string>
+    <string name="pref_audiocodec_dlg">Select default audio codec</string>
+    <string name="pref_version">QuickBlox WebRTC\nBuild version 1.12</string>
+    <string name="btn_screen_capture">screenShot</string>
+    <string name="accepted">Accepted</string>
+    <string name="connection_was_lost">Connection was lost</string>
+
+    <string name="opponents">and %s other</string>
+    <string name="opponent">and %s</string>
+    <string name="ringing">Ringing</string>
+    <string name="stop_share">Stop</string>
+    <string name="camera_swicth_failed">\"Failed switch camera\"</string>
+
+    <!-- community post screen-->
+    <string name="community">Community</string>
+    <string name="meditation">Meditation</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="make_me_anonymous">Make me Anonymous</string>
+    <string name="post_anonymous">Post as Anonymous</string>
+    <string name="write_description_here">Write description here</string>
+    <string name="share">Share</string>
+    <string name="comment">Comment</string>
+    <string name="username">UserName</string>
+    <string name="time">time</string>
+    <string name="description">description</string>
+    <string name="write_thoughts">Write Your Thoughts</string>
+    <string name="video_record_heading">Video Record Yourself Sharing
+        Your Thoughts</string>
+
+    <!--  //additional-->
+    <string name="not_permitted">Not permitted</string>
+    <string name="no_folder_app">No folder view application installed</string>
+    <string name="file_not_found">File not found</string>
+    <string name="shared_via">"Shared via %1$s"</string>
+    <string name="rename_recording">Rename Recording</string>
+    <string name="are_you_sure">"Are you sure ? "</string>
+    <string name="delete_recording">Delete Recording</string>
+    <string name="hold_by_call">pause (hold by call)</string>
+    <string name="encoding">encoding</string>
+    <string name="pause">pause</string>
+    <string name="edit">edit</string>
+    <string name="confirm_cancel">Confirm cancel</string>
+    <string name="are_you_sure_cancel">Are you sure you want to cancel?</string>
+    <string name="recording">recording</string>
+    <string name="encoding_title" tools:ignore="TypographyEllipsis">Encoding...</string>
+    <string name="recording_title">Recording</string>
+    <string name="db">dB</string>
+    <string name="days_symbol">"d"</string>
+    <string name="title_header">%1$s free ~ %2$s left</string>
+    <string name="size_gb">%1$.1f GB</string>
+    <string name="size_mb">%1$.1f MB</string>
+    <string name="size_kb">%1$.1f kb</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="open_recording_folder">Open Recording Folder</string>
+    <string name="recording_list_is_empty">Recording List is Empty\n\nClick Record to Start Recording</string>
+    <string name="title_activity_landing_page">LandingPageActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="happy_memories">Happy Memories</string>
+    <string name="mood_logs">Moods Logs</string>
+    <string name="my_vents">My Vents</string>
+    <string name="documents">Documents</string>
+    <string name="reminders">Reminders</string>
+    <string name="My_Appointments">My Appointments</string>
+    <string name="care_receiver">Care Receiver</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="chat_bot">ChatBot</string>
+    <string name="settings">Settings</string>
+
+    <string name="select_language">Please select atleast one language</string>
+    <string name="device_country_not_registered">Your device country is not registered yet</string>
+    <string name="no_languages_found">No languages found</string>
+
+    <string name="select_option">Select an option</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="agree_terms">Please agree Terms and Conditions</string>
+
+    <string name="dummy_hi">Hi</string>
+    <string name="welcome_text">Before you start, we have just a few questions</string>
+
+    <string name="pull_down">Pull Down To Refresh</string>
+    <string name="legal_guardian">Are you the legal guardian?</string>
+    <string name="btn_continue">Continue</string>
+    <string name="delete_confirmation">Sure you want to remove this Care-Receiver?</string>
+    <string name="carereceiver_removed">Care-Receiver removed successfully!</string>
+    <string name="email_empty">Please enter email ID!</string>
+    <string name="name_empty">Please enter name!</string>
+    <string name="empty_phone">Please enter phone!</string>
+    <string name="phone_length">Phone number should be of 10 digits!</string>
+    <string name="minor_status">Is your care-receiver a minor?</string>
+    <string name="no_relation">Please mention your relationship to care-receiver!</string>
+    <string name="discard_post">Sure you want to discard the post?</string>
+    <string name="whoops">Whoops</string>
+    <string name="slow_internet">Slow or no internet connection.</string>
+    <string name="check_settings">Please check your internet settings</string>
+    <string name="audio_record_time">00:00</string>
+    <string name="preparing">Preparing</string>
+    <string name="title">Title</string>
+    <string name="audio_record_yourself">Audio Record Yourslef Sharing\n Your Thoughts</string>
+    <string name="customLoadingIcon">&#xe807;</string>
+    <string name="customPlayIcon">&#xe802;</string>
+    <string name="customStopIcon">&#xe803;</string>
+    <string name="job_interview">Eg. I have a job interview</string>
+    <string name="post_heading">What happened ? What caused you to feel this emotion ?</string>
+    <string name="something_went_wrong">Something went wrong! Please try again</string>
+    <string name="post_updated_success">Post updated successfully!</string>
+    <string name="enter_description">Please enter description!</string>
+    <string name="speak_thoughts">Speak Out Your Thoughts</string>
+    <string name="post_added_success">Post added successfully!</string>
+    <string name="letschat">Let\'s Chat</string>
+    <string name="chat_welcome">Welcome to iGet Happy</string>
+    <string name="letsdothis">Let\'s do this</string>
+    <string name="typehere">Type here</string>
+    <string name="skip_carereceiver">Do you want to continue without adding care receiver?</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="MediaPickerTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="actionMenuTextColor">@color/picker_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="divider">@android:color/white</item>
+    </style>
+
+</resources>

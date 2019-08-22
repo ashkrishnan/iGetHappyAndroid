@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+            <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAdminButton"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textStyle="bold"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteY="28dp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_centerInParent="true">
+
+                <TextView
+                        android:id="@+id/tv_camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/camera"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"/>
+                <View
+                        android:id="@+id/view_camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/header_line_height"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/blue"/>
+
+                <TextView
+                        android:id="@+id/tv_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/menu_gallery"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"/>
+                <View
+                        android:id="@+id/view_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/header_line_height"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/blue"/>
+                <TextView
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="@string/cancel"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
